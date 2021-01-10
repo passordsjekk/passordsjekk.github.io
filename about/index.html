@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Er passordet på avveie? Passordsjekk.no</title>
+  <title>Om - Er passordet på avveie? Passordsjekk.no</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="/passordsjekk.github.io/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
@@ -36,12 +36,12 @@
 
 </head>
 
-<body class='page page-home'>
+<body class='page page-default-single'>
   <div id="main-menu-mobile" class="main-menu-mobile">
   <ul>
     
     
-    <li class="menu-item-søk active">
+    <li class="menu-item-søk">
       <a href="passordsjekk.github.io/">
         <span>Søk</span>
       </a>
@@ -75,7 +75,7 @@
   <ul>
     
     
-    <li class="menu-item-søk active">
+    <li class="menu-item-søk">
       <a href="passordsjekk.github.io/">
         
         <span>Søk</span>
@@ -114,73 +114,26 @@
 </div>
 
     
-<div class="intro">
-  <div class="container">
-    <div class="row justify-content-start">
-      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
-        <h1 id="er-passordet-på-avveie">Er passordet på avveie?</h1>
-
-        
-        <div class="call">
-  <div class="call-box-top">
-    <input id="password-box" type="password" class="password-input" placeholder="Fyll inn et passord (f.eks. &quot;123456&quot;)" onkeyup="PasswordModified()">
-  </div>
+<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <h1 class="title">Om</h1>
+      <div class="content"><p>Siden lages og vedlikeholdes frivillig av Sindre Lindstad. Kildekoden ligger åpent på <a href="https://github.com/passordsjekk">GitHub</a>.</p>
+<p>Formålet er å tilby en enkel oppslagstjeneste for HIBP med informasjon på norsk.</p>
+<h1 id="kilder">Kilder</h1>
+<p>Siden er bygget på <a href="https://gohugo.io">Hugo</a>, på temaet <a href="https://themes.gohugo.io/hugo-serif-theme">Hugo Serif</a>.</p>
+<p>Illustrasjonsbilder fra <a href="https://niceillustrations.com">niceillustrations.com</a>.</p>
+<p>Hashingalgoritmen (JavaScript) er fra <a href="https://www.webtoolkit.info">webtoolkit.info</a>.</p>
+<p>Ikoner laget av Freepik fra <a href="https://www.flaticon.com/authors/freepik">flaticon.com</a>.</p>
+<h1 id="bidra">Bidra</h1>
+<p>Hvis du jobber innenfor IT-/informasjonssikkerhet og har forslag til endringer: legg gjerne inn et issue eller en pull request på <a href="https://github.com/passordsjekk">GitHub</a>.</p>
+<h1 id="juridisk">Juridisk</h1>
+<p>Ingen passord blir oversendt i sin helhet, og det innhentes ingen personopplysninger. Ingen passord blir lagret. Passorddatabasen ligger på haveibeenpwned.com, som er en uavhengig tredjepart. Hverken sidens utvikler(e), eier(e), driftsleverandør(er) eller andre direkte eller indirekte tilknyttende parter har vært involvert i ulovlig innhenting av dataene som er brukt ved oppslag, og er heller ikke ansvarlige for misbruk, tap eller lekkasjer av passord. Dette gjelder også forekomster knyttet til bruk av denne nettsiden, for eksempel som konsekvens av bruk av utdatert programvare, ondsinnet programvare eller programvaretillegg, eller ved innhenting under transport.</p>
+<p>Sjekk av passord gjøres mot API-grensesnittet til haveibeenpwned, laget og vedlikeholdt av Troy Hunt. Gå til <a href="https://haveibeenpwned.com">haveibeenpwned.com</a> for mer informasjon.</p>
 </div>
-
-        
-        <div id="compromised"><br/>Passordet forlater ikke nettleseren din. <a href="faq">Les mer</a>.</div>
-      </div>
-      
     </div>
   </div>
 </div>
-
-
-<div class="strip">
-  <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
-    <div class="row justify-content-center">
-      
-      <div class="col-12 col-md-6 col-lg-4 mb-2">
-        <div class="feature">
-          
-          <div class="feature-image"><img alt=" logo" src="/passordsjekk.github.io/images/icons/password-input-color.svg" /></div>
-          
-          <h2 class="feature-title">Sjekk lekkasjer</h2>
-          <div class="feature-content">
-            <p>Sjekk passord mot lekkasjedatabaser for å se om det har blitt lekket ved tidligere datainnbrudd.</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col-12 col-md-6 col-lg-4 mb-2">
-        <div class="feature">
-          
-          <div class="feature-image"><img alt=" logo" src="/passordsjekk.github.io/images/icons/magnifier-color.svg" /></div>
-          
-          <h2 class="feature-title">Kilde</h2>
-          <div class="feature-content">
-            <p>Passordene sjekkes mot databasen til haveibeenpwned.com, som har samlet passord fra flere store lekkasjer.</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col-12 col-md-6 col-lg-4 mb-2">
-        <div class="feature">
-          
-          <div class="feature-image"><img alt=" logo" src="/passordsjekk.github.io/images/icons/lock-good-color.svg" /></div>
-          
-          <h2 class="feature-title">Lær om passordsikkerhet</h2>
-          <div class="feature-content">
-            <p>Gode passord bør være lange, og du bør ha ulike passord på forskjellige nettsider. Les mer under Passordtips.</p>
-          </div>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-
 
   </div>
 
@@ -193,7 +146,7 @@
           <ul>
             
             
-            <li class="menu-item-til forsiden active">
+            <li class="menu-item-til forsiden">
               <a href="passordsjekk.github.io/">
                 Til forsiden
               </a>

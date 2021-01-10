@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Er passordet på avveie? Passordsjekk.no</title>
+  <title>Spørsmål og svar - Er passordet på avveie? Passordsjekk.no</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="/passordsjekk.github.io/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
@@ -36,12 +36,12 @@
 
 </head>
 
-<body class='page page-home'>
+<body class='page page-default-single'>
   <div id="main-menu-mobile" class="main-menu-mobile">
   <ul>
     
     
-    <li class="menu-item-søk active">
+    <li class="menu-item-søk">
       <a href="passordsjekk.github.io/">
         <span>Søk</span>
       </a>
@@ -75,7 +75,7 @@
   <ul>
     
     
-    <li class="menu-item-søk active">
+    <li class="menu-item-søk">
       <a href="passordsjekk.github.io/">
         
         <span>Søk</span>
@@ -114,73 +114,34 @@
 </div>
 
     
-<div class="intro">
-  <div class="container">
-    <div class="row justify-content-start">
-      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
-        <h1 id="er-passordet-på-avveie">Er passordet på avveie?</h1>
-
-        
-        <div class="call">
-  <div class="call-box-top">
-    <input id="password-box" type="password" class="password-input" placeholder="Fyll inn et passord (f.eks. &quot;123456&quot;)" onkeyup="PasswordModified()">
-  </div>
+<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <h1 class="title">Spørsmål og svar</h1>
+      <div class="content"><h2 id="hvordan-fungerer-denne-nettsiden">Hvordan fungerer denne nettsiden?</h2>
+<p>Når du benytter denne tjenesten blir passordet kun oppbevart i nettleseren din.</p>
+<p>Når du taster inn tekst i passordfeltet blir teksten obfuskert (hashet). Deretter plukkes de første tegnene fra den obfuskerte teksten, som så sendes over til <a href="haveibeenpwned.com">Have I Been Pwned</a> (HIBP).</p>
+<p>HIBP har samlet data fra flere store lekkasjer i én sentral database. Passordene er lagret uten knytning til brukernavn, og ligger lagret obfuskert. Det vil si at det er en kodet versjon av passordene, som man kan gjøre oppslag på uten at de ligger åpent.</p>
+<p>Hvis de første tegnene gir treff i databasen hos HIBP, så returneres en liste over obfuskerte tekster med de samme første tegnene tilbake, med oversikt over antall treff per tekst. Tekstene som kommer tilbake sammenlignes så med det du har tastet inn i nettleseren din. Hvis en av tekstene er lik den du har tastet inn, så betyr det at passordet finnes i databasen.</p>
+<h2 id="hvordan-kommer-passord-på-avveie">Hvordan kommer passord på avveie?</h2>
+<p>Ved et datainnbrudd kan angripere få tak i lange lister over brukernes brukernavn og passord. Det er ikke uvanlig at disse listene blir solgt videre eller delt fritt - av og til helt åpent på internett. Dette kalles en passordlekkasje.</p>
+<p>Listene brukes ofte til å forsøke å logge inn på andre sider. Det er derfor det er viktig å ha unike passord på ulike nettsider.</p>
+<p><a href="../tips">Les mer om passord</a></p>
+<h2 id="hvordan-passordlekkasjer-brukes">Hvordan passordlekkasjer brukes</h2>
+<p>Når noen bruker lekkede lister er det ikke nødvendigvis for målrettede angrep. Listene kan også brukes til å automatisk teste alle brukernavn og passord mot en nettside, helt til man får treff.</p>
+<p>Hvis man ikke kjenner til hvilke brukernavn og passord som hører sammen, så begynner man gjerne med passordene som er mest vanlige. Dette øker sannsynligheten for å få treff tidlig. Det er derfor det er viktig å bruke passord som ikke er veldig vanlige. Forsøk heller å lage et som er unikt for deg.</p>
+<p><a href="../tips">Les mer om passord</a></p>
+<h2 id="kan-jeg-stole-på-denne-siden">Kan jeg stole på denne siden?</h2>
+<p>Det er generelt ikke anbefalt å oppgi passord til sider du ikke stoler på, og det er positivt å være skeptisk. På denne siden blir ikke passord logget eller lagret, og det kreves ikke brukernavn eller annen informasjon som normalt må knyttes til passordet for at det skal kunne misbrukes. <strong>Dersom du likevel ikke stoler på denne siden bør du ikke bruke den.</strong></p>
+<p>Du kan eventuelt også søke opp passord <a href="https://haveibeenpwned.com/Passwords">direkte på haveibeenpwned.com (ekstern side)</a>.</p>
+<h2 id="nyhetsartikler-om-passordlekkasjer">Nyhetsartikler om passordlekkasjer</h2>
+<p><a href="https://www.digi.no/artikler/mer-enn-en-halv-milliard-hackede-passord-gjort-sokbare-finner-du-ditt-pa-listen/431454">Digi.no: Mer enn en halv milliard hackede passord gjort søkbare. Finner du ditt på listen?</a> (28. feb. 2018)</p>
+<p><a href="https://www.nrk.no/norge/1_4-milliarder-passord-funnet-pa-det-morke-nettet-1.13823884">NRK: Over en milliard passord funnet i gigantisk hackerfil</a> (13. des. 2017)</p>
+<p><a href="https://www.nrk.no/sapmi/sjekk-om-du-er-rammet-av-passordlekkasjer-_-og-slik-sikrer-du-deg-1.14245671">NRK: Sjekk om du er rammet av passordlekkasjer – og slik sikrer du deg</a> (12. okt. 2018)</p>
 </div>
-
-        
-        <div id="compromised"><br/>Passordet forlater ikke nettleseren din. <a href="faq">Les mer</a>.</div>
-      </div>
-      
     </div>
   </div>
 </div>
-
-
-<div class="strip">
-  <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
-    <div class="row justify-content-center">
-      
-      <div class="col-12 col-md-6 col-lg-4 mb-2">
-        <div class="feature">
-          
-          <div class="feature-image"><img alt=" logo" src="/passordsjekk.github.io/images/icons/password-input-color.svg" /></div>
-          
-          <h2 class="feature-title">Sjekk lekkasjer</h2>
-          <div class="feature-content">
-            <p>Sjekk passord mot lekkasjedatabaser for å se om det har blitt lekket ved tidligere datainnbrudd.</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col-12 col-md-6 col-lg-4 mb-2">
-        <div class="feature">
-          
-          <div class="feature-image"><img alt=" logo" src="/passordsjekk.github.io/images/icons/magnifier-color.svg" /></div>
-          
-          <h2 class="feature-title">Kilde</h2>
-          <div class="feature-content">
-            <p>Passordene sjekkes mot databasen til haveibeenpwned.com, som har samlet passord fra flere store lekkasjer.</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col-12 col-md-6 col-lg-4 mb-2">
-        <div class="feature">
-          
-          <div class="feature-image"><img alt=" logo" src="/passordsjekk.github.io/images/icons/lock-good-color.svg" /></div>
-          
-          <h2 class="feature-title">Lær om passordsikkerhet</h2>
-          <div class="feature-content">
-            <p>Gode passord bør være lange, og du bør ha ulike passord på forskjellige nettsider. Les mer under Passordtips.</p>
-          </div>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-
 
   </div>
 
@@ -193,7 +154,7 @@
           <ul>
             
             
-            <li class="menu-item-til forsiden active">
+            <li class="menu-item-til forsiden">
               <a href="passordsjekk.github.io/">
                 Til forsiden
               </a>
