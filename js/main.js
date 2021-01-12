@@ -2,7 +2,11 @@ var passwordInput = document.getElementById("password-box")
 var passwordPlain = '';
 var lastPassChecked = '';
 
-window.setInterval(function(){ 
+window.setInterval(function(){
+  if (passwordInput == null) {
+    return;
+  }
+
   passwordPlain = passwordInput.value;
 
   if (lastPassChecked !== passwordPlain) {
